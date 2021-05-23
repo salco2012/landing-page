@@ -1,0 +1,1006 @@
+$color1: #0f2336;
+$color2: #00cccc;
+$color3: #f4f5f6;
+$color4: #576d81;
+
+.title-card {
+  color: $color1;
+  line-height: 32px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 900;
+  color: $color1;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: $color3;
+  opacity: 0.99;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  &__top-button {
+    min-width: 122px;
+    min-height: 50px;
+    padding: 16px 26px;
+    background-color: $color1;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+  }
+  &__top-button:hover {
+    background-color: #204264;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+  }
+
+  &__content-info {
+    margin-bottom: 185px;
+  }
+
+  &__content-title {
+    min-width: 535px;
+    font-size: 55px;
+    font-weight: bold;
+    color: $color1;
+    line-height: 76px;
+    margin-bottom: 50px;
+  }
+  &__content-title span {
+    color: $color2;
+  }
+  &__content-button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    background-color: $color2;
+    color: $color1;
+    padding: 19px 35px 19px 21px;
+    border-radius: 14px;
+    box-shadow: 0px 3px 18px rgba(0, 201, 201, 0.55);
+    transition: 0.5s ease-in-out;
+  }
+  &__content-button:hover {
+    background-color: #0df8f8;
+  }
+  &__content-button-img {
+    margin-left: 15px;
+  }
+  &__content-img {
+    position: relative;
+    top: 0px;
+    right: 205px;
+    z-index: -1;
+  }
+}
+
+.menu {
+  margin-left: auto;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    list-style-type: none;
+    margin-right: 70px;
+  }
+  &__item:last-child {
+    margin-right: 45px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color1;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+  }
+  &__link:hover {
+    color: $color2;
+  }
+}
+
+.advantages {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 100px 0;
+  }
+
+  &__card {
+    max-width: 325px;
+  }
+
+  &__card-img {
+    margin-bottom: 30px;
+  }
+
+  &__card-title {
+    @extend .title-card;
+    margin-bottom: 12px;
+  }
+
+  &__card-description {
+    color: $color4;
+    max-width: 293px;
+  }
+}
+
+.helpful-information {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 540px;
+    background-color: $color3;
+    border-radius: 50px;
+    position: relative;
+    opacity: 0.99;
+    margin: 50px 0 180px 0;
+  }
+
+  &__img-cocktail {
+    position: absolute;
+    top: 95px;
+    left: 33px;
+    z-index: -1;
+  }
+
+  &__img-crisps {
+    position: absolute;
+    bottom: -38px;
+    left: 390px;
+  }
+
+  &__img-iphone {
+    margin-top: -70px;
+    margin: -50px 80px 0 158px;
+  }
+
+  &__info-top-despription {
+    font-size: 18px;
+    color: $color4;
+    margin-bottom: 22px;
+  }
+
+  &__info-title {
+    @extend .title;
+    margin-bottom: 21px;
+  }
+
+  &__info-bottom-despription {
+    color: $color4;
+    max-width: 415px;
+  }
+}
+
+.additional-benefits {
+  background-color: $color3;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-height: 527px;
+    margin-bottom: 180px;
+  }
+  &__cards {
+    margin-top: -40px;
+  }
+  &__card {
+    position: relative;
+    padding: 38px 40px 43px 98px;
+    background-color: #fff;
+    max-width: 455px;
+    max-height: 179px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
+  }
+  &__card:last-child {
+    margin-bottom: 0;
+  }
+  &__card:nth-child(2) {
+    margin-left: 40px;
+  }
+  &__card-title {
+    @extend .title-card;
+    margin-bottom: 25px;
+  }
+  &__img-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  &__card-description {
+    color: $color4;
+    max-width: 330px;
+  }
+
+  &__img {
+    margin-top: -100px;
+  }
+}
+
+.group-orders {
+  &__wrapper {
+    height: 540px;
+    background-color: $color3;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    opacity: 0.99;
+    margin-bottom: 150px;
+  }
+
+  &__info {
+    max-width: 420px;
+    margin-left: 140px;
+  }
+
+  &__info-top-despription {
+    margin-bottom: 22px;
+    color: $color4;
+    font-size: 18px;
+  }
+
+  &__info-title {
+    @extend .title;
+    margin-bottom: 21px;
+  }
+
+  &__info-buttom-despription {
+    color: $color4;
+  }
+
+  &__img-iphone {
+    margin-right: 125px;
+  }
+
+  &__img-cocktail {
+    position: absolute;
+    bottom: 42px;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__img-blueberry {
+    position: absolute;
+    bottom: -50px;
+    right: 384px;
+  }
+}
+
+.feedback {
+  margin-bottom: 110px;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  &__form {
+    max-width: 570px;
+  }
+  &__form-title {
+    color: $color1;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+
+  &__form-input {
+    padding: 17px 111px 16px 114px;
+    border-radius: 6px;
+    background-color: $color3;
+    border: none;
+    margin-bottom: 20px;
+    height: 55px;
+  }
+
+  &__form-button {
+    background-color: $color2;
+    color: $color1;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 35px 17px 36px;
+    border-radius: 14px;
+    margin-left: 20px;
+    height: 55px;
+    transition: 0.5s ease-in-out;
+  }
+  &__form-button:hover {
+    background-color: #0df8f8;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__img-app-store {
+    cursor: pointer;
+    margin-right: 24px;
+  }
+
+  &__img-google-play {
+    cursor: pointer;
+  }
+}
+
+.footer {
+  background-color: $color1;
+  position: relative;
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 950px;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding: 50px 0 100px 0;
+  }
+  &__img-oakLeaf-left {
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+  }
+
+  &__img-oakLeaf-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__menu {
+    margin-left: auto;
+  }
+
+  &__menu-list {
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $color4;
+    font-size: 14px;
+    transition: 0.3s ease-in;
+  }
+  &__menu-link span {
+    color: $color2;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  &__menu-link:hover {
+    color: $color2;
+  }
+}
+
+//media
+// 0-575px || 576-767px || 768-991px || 992-1199px || 1200px+
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .helpful-information {
+    &__img-iphone {
+      margin-right: 30px;
+    }
+    &__info {
+      margin-right: 30px;
+    }
+  }
+  .header {
+    &__content-img {
+      height: 500px;
+      right: 320px;
+      margin-top: auto;
+    }
+    &__content-title {
+      font-size: 45px;
+      line-height: 60px;
+    }
+  }
+  .advantages {
+    &__card {
+      max-width: 30%;
+    }
+    &__card-title {
+      font-size: 22px;
+    }
+  }
+  .additional-benefits {
+    &__card {
+      max-width: 360px;
+      padding: 25px 15px 25px 85px;
+    }
+    &__img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 580px;
+    }
+    &__card-title {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    &__cards {
+      margin-top: -5px;
+    }
+    &__wrapper {
+      position: relative;
+      height: 100%;
+    }
+  }
+  .group-orders {
+    &__info {
+      max-width: 380px;
+      margin: 0 30px 0 80px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      width: 700px;
+    }
+    __img-oakLeaf-left {
+      height: 100%;
+      top: -60px;
+    }
+    &__img-oakLeaf-right {
+      height: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+  .header {
+    &__content-info {
+      margin-bottom: 80px;
+    }
+    &__content {
+      padding-top: 60px;
+    }
+    &__content-img {
+      height: 370px;
+      right: 360px;
+    }
+    &__content-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      line-height: 50px;
+    }
+  }
+
+  .advantages {
+    &__card-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    &__card-img {
+      margin-bottom: 15px;
+    }
+  }
+
+  .helpful-information {
+    &__img-iphone {
+      height: 460px;
+      margin-left: 100px;
+      margin-top: -30px;
+    }
+    &__img-cocktail {
+      height: 300px;
+      margin-left: -20px;
+    }
+    &__img-crisps {
+      height: 80px;
+      left: 250px;
+      bottom: -30px;
+    }
+    &__wrapper {
+      height: 400px;
+    }
+    &__info-top-despription {
+      margin-bottom: 15px;
+    }
+    &__info-title {
+      line-height: 45px;
+      margin-bottom: 15px;
+      font-size: 32px;
+    }
+  }
+
+  .additional-benefits {
+    &__img {
+      height: 460px;
+    }
+    &__cards {
+      margin-top: -40px;
+      margin-bottom: -40px;
+    }
+    &__card {
+      margin-bottom: 15px;
+      max-width: 280px;
+      padding: 10px 15px 15px 55px;
+    }
+    &__card:nth-child(2) {
+      margin-left: 20px;
+    }
+    &__img-icon {
+      height: 35px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  .group-orders {
+    &__wrapper {
+      height: 400px;
+    }
+    &__img-iphone {
+      height: 460px;
+      margin-right: 80px;
+    }
+    &__img-cocktail {
+      height: 300px;
+    }
+    &__img-blueberry {
+      height: 80px;
+      right: 250px;
+      bottom: -35px;
+    }
+    &__info-title {
+      line-height: 45px;
+      margin-bottom: 15px;
+      font-size: 32px;
+    }
+    &__info-top-despription {
+      margin-bottom: 15px;
+    }
+  }
+
+  .feedback {
+    &__form {
+      text-align: center;
+    }
+    &__img {
+      justify-content: flex-start;
+    }
+    &__form-title {
+      font-size: 42px;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      width: 500px;
+    }
+    &__img-oakLeaf-left {
+      height: 85%;
+      top: -50px;
+    }
+    &__img-oakLeaf-right {
+      height: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+  .header {
+    &__content-img {
+      height: 250px;
+    }
+    &__content-title {
+      font-size: 24px;
+      line-height: 35px;
+    }
+    &__content-button {
+      padding: 10px;
+      font-size: 14px;
+    }
+    &__content-button-img {
+      margin-left: 5px;
+      height: 15px;
+    }
+    &__content {
+      padding-top: 40px;
+    }
+    &__top-button {
+      min-width: 100px;
+      min-height: 37px;
+      padding: 5px 10px;
+    }
+  }
+
+  .menu {
+    &__item {
+      margin-right: 20px;
+    }
+    &__link {
+      font-size: 12px;
+    }
+  }
+
+  .logo__img {
+    height: 35px;
+  }
+
+  .advantages {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 40px 0 40px 0;
+    }
+    &__card {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    &__card-description {
+      max-width: 100%;
+      font-size: 14px;
+    }
+    &__card-img {
+      height: 60px;
+      margin-bottom: 5px;
+    }
+    &__card-title {
+      margin-bottom: 5px;
+    }
+  }
+
+  .helpful-information {
+    &__wrapper {
+      height: 300px;
+    }
+    &__img-iphone {
+      height: 320px;
+      margin-left: 60px;
+      margin-right: 15px;
+      margin-top: -5px;
+    }
+    &__img-cocktail {
+      height: 180px;
+    }
+    &__img-crisps {
+      height: 55px;
+      left: 160px;
+      bottom: -20px;
+    }
+    &__info-title {
+      font-size: 26px;
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+    &__info-top-despription {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    &__info-bottom-despription {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .additional-benefits {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 100px;
+      max-height: 100%;
+    }
+    &__img {
+      height: 320px;
+      z-index: 1;
+      position: static;
+      margin: 0;
+    }
+    &__card-title {
+      font-size: 18px;
+    }
+    &__cards {
+      margin-top: -20px;
+    }
+    &__card {
+      max-width: 100%;
+    }
+    &__card:nth-child(2) {
+      margin-left: 0;
+    }
+    &__card-description {
+      font-size: 14px;
+      max-width: 100%;
+    }
+  }
+
+  .group-orders {
+    &__wrapper {
+      height: 300px;
+    }
+    &__info {
+      margin: 0 20px 0 60px;
+    }
+    &__img-iphone {
+      height: 320px;
+      margin-right: 45px;
+    }
+    &__img-cocktail {
+      height: 180px;
+    }
+    &__img-blueberry {
+      height: 55px;
+      right: 170px;
+      bottom: -10px;
+    }
+    &__info-title {
+      font-size: 26px;
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+    &__info-top-despription {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    &__info-buttom-despription {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .feedback {
+    &__logo {
+      height: 60px;
+    }
+    &__img {
+      justify-content: center;
+    }
+    &__form-title {
+      font-size: 26px;
+      line-height: 35px;
+      margin-bottom: 10px;
+    }
+    &__form-input {
+      margin-bottom: 10px;
+    }
+    &__form-button {
+      margin: 0 0 10px 0;
+      width: 394px;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      width: max-content;
+      padding: 35px 0;
+    }
+    &__menu {
+      padding-left: 20px;
+    }
+    &__img-oakLeaf-left {
+      left: 0;
+      bottom: 0;
+      height: 75%;
+    }
+    &__img-oakLeaf-right {
+      height: 60%;
+    }
+    &__logo {
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header {
+    min-width: 100%;
+    &__content {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 40px;
+    }
+    &__content-button {
+      margin: 0 auto;
+    }
+    &__top {
+      flex-direction: column;
+      padding-top: 20px;
+    }
+    &__content-title {
+      min-width: 100%;
+    }
+    &__content-info {
+      max-width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &__content-img {
+      height: 225px;
+      position: static;
+      margin: 0 5px 0 5px;
+    }
+  }
+  .menu {
+    margin: 0;
+    &__list {
+      padding: 0;
+    }
+    &__item:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+  .helpful-information {
+    &__wrapper {
+      flex-wrap: wrap;
+      height: min-content;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+    &__img-iphone {
+      height: 200px;
+      margin: -15px 0 0 0;
+    }
+    &__img-cocktail {
+      position: relative;
+      height: 120px;
+      top: -20px;
+      left: 30px;
+    }
+    &__img {
+      position: relative;
+      left: -20px;
+    }
+    &__img-crisps {
+      height: 35px;
+      left: 110px;
+      top: 165px;
+    }
+    &__info {
+      text-align: center;
+      padding: 30px 15px 20px 15px;
+    }
+  }
+  .feedback {
+    &__form-input {
+      padding: 17px 50px 16px 50px;
+    }
+    &__form {
+      max-width: 100%;
+    }
+    &__form-input {
+      width: 394px;
+      max-width: 80%;
+    }
+    ::placeholder {
+      text-align: center;
+    }
+    &__form-button {
+      max-width: 80%;
+    }
+    &__img-app-store {
+      max-width: 37%;
+    }
+    &__img-google-play {
+      max-width: 37%;
+    }
+  }
+  .group-orders {
+    &__wrapper {
+      height: min-content;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      margin-bottom: 70px;
+      margin-top: -20px;
+    }
+    &__img {
+      position: relative;
+      left: 55px;
+    }
+    &__img-iphone {
+      height: 200px;
+      margin: -15px 0 0 0;
+    }
+    &__info {
+      text-align: center;
+      margin: 20px 15px 20px 15px;
+    }
+    &__img-cocktail {
+      position: relative;
+      height: 130px;
+      top: -15px;
+      left: -20px;
+    }
+    &__img-blueberry {
+      position: relative;
+      height: 30px;
+      left: -190px;
+      top: 0;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      width: 50%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 25px 0;
+    }
+    &__menu {
+      margin: 0 10px;
+      padding: 0;
+    }
+    &__img-oakLeaf-left {
+      height: 40%;
+    }
+    &__img-oakLeaf-right {
+      height: 35%;
+    }
+    &__logo {
+      margin-bottom: 25px;
+    }
+  }
+}

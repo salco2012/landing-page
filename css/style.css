@@ -1,0 +1,916 @@
+.title-card, .advantages__card-title, .additional-benefits__card-title {
+  color: #0f2336;
+  line-height: 32px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.title, .helpful-information__info-title, .group-orders__info-title {
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 900;
+  color: #0f2336;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #f4f5f6;
+  opacity: 0.99;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.header__top-button {
+  min-width: 122px;
+  min-height: 50px;
+  padding: 16px 26px;
+  background-color: #0f2336;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.5s ease-in-out;
+}
+.header__top-button:hover {
+  background-color: #204264;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+.header__content-info {
+  margin-bottom: 185px;
+}
+.header__content-title {
+  min-width: 535px;
+  font-size: 55px;
+  font-weight: bold;
+  color: #0f2336;
+  line-height: 76px;
+  margin-bottom: 50px;
+}
+.header__content-title span {
+  color: #00cccc;
+}
+.header__content-button {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  background-color: #00cccc;
+  color: #0f2336;
+  padding: 19px 35px 19px 21px;
+  border-radius: 14px;
+  box-shadow: 0px 3px 18px rgba(0, 201, 201, 0.55);
+  transition: 0.5s ease-in-out;
+}
+.header__content-button:hover {
+  background-color: #0df8f8;
+}
+.header__content-button-img {
+  margin-left: 15px;
+}
+.header__content-img {
+  position: relative;
+  top: 0px;
+  right: 205px;
+  z-index: -1;
+}
+
+.menu {
+  margin-left: auto;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  list-style-type: none;
+  margin-right: 70px;
+}
+.menu__item:last-child {
+  margin-right: 45px;
+}
+.menu__link {
+  text-decoration: none;
+  color: #0f2336;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+}
+.menu__link:hover {
+  color: #00cccc;
+}
+
+.advantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 100px 0;
+}
+.advantages__card {
+  max-width: 325px;
+}
+.advantages__card-img {
+  margin-bottom: 30px;
+}
+.advantages__card-title {
+  margin-bottom: 12px;
+}
+.advantages__card-description {
+  color: #576d81;
+  max-width: 293px;
+}
+
+.helpful-information__wrapper {
+  display: flex;
+  align-items: center;
+  height: 540px;
+  background-color: #f4f5f6;
+  border-radius: 50px;
+  position: relative;
+  opacity: 0.99;
+  margin: 50px 0 180px 0;
+}
+.helpful-information__img-cocktail {
+  position: absolute;
+  top: 95px;
+  left: 33px;
+  z-index: -1;
+}
+.helpful-information__img-crisps {
+  position: absolute;
+  bottom: -38px;
+  left: 390px;
+}
+.helpful-information__img-iphone {
+  margin-top: -70px;
+  margin: -50px 80px 0 158px;
+}
+.helpful-information__info-top-despription {
+  font-size: 18px;
+  color: #576d81;
+  margin-bottom: 22px;
+}
+.helpful-information__info-title {
+  margin-bottom: 21px;
+}
+.helpful-information__info-bottom-despription {
+  color: #576d81;
+  max-width: 415px;
+}
+
+.additional-benefits {
+  background-color: #f4f5f6;
+}
+.additional-benefits__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-height: 527px;
+  margin-bottom: 180px;
+}
+.additional-benefits__cards {
+  margin-top: -40px;
+}
+.additional-benefits__card {
+  position: relative;
+  padding: 38px 40px 43px 98px;
+  background-color: #fff;
+  max-width: 455px;
+  max-height: 179px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
+}
+.additional-benefits__card:last-child {
+  margin-bottom: 0;
+}
+.additional-benefits__card:nth-child(2) {
+  margin-left: 40px;
+}
+.additional-benefits__card-title {
+  margin-bottom: 25px;
+}
+.additional-benefits__img-icon {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.additional-benefits__card-description {
+  color: #576d81;
+  max-width: 330px;
+}
+.additional-benefits__img {
+  margin-top: -100px;
+}
+
+.group-orders__wrapper {
+  height: 540px;
+  background-color: #f4f5f6;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  opacity: 0.99;
+  margin-bottom: 150px;
+}
+.group-orders__info {
+  max-width: 420px;
+  margin-left: 140px;
+}
+.group-orders__info-top-despription {
+  margin-bottom: 22px;
+  color: #576d81;
+  font-size: 18px;
+}
+.group-orders__info-title {
+  margin-bottom: 21px;
+}
+.group-orders__info-buttom-despription {
+  color: #576d81;
+}
+.group-orders__img-iphone {
+  margin-right: 125px;
+}
+.group-orders__img-cocktail {
+  position: absolute;
+  bottom: 42px;
+  right: 0;
+  z-index: -1;
+}
+.group-orders__img-blueberry {
+  position: absolute;
+  bottom: -50px;
+  right: 384px;
+}
+
+.feedback {
+  margin-bottom: 110px;
+}
+.feedback__wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.feedback__form {
+  max-width: 570px;
+}
+.feedback__form-title {
+  color: #0f2336;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.feedback__form-input {
+  padding: 17px 111px 16px 114px;
+  border-radius: 6px;
+  background-color: #f4f5f6;
+  border: none;
+  margin-bottom: 20px;
+  height: 55px;
+}
+.feedback__form-button {
+  background-color: #00cccc;
+  color: #0f2336;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 35px 17px 36px;
+  border-radius: 14px;
+  margin-left: 20px;
+  height: 55px;
+  transition: 0.5s ease-in-out;
+}
+.feedback__form-button:hover {
+  background-color: #0df8f8;
+}
+.feedback__img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.feedback__img-app-store {
+  cursor: pointer;
+  margin-right: 24px;
+}
+.feedback__img-google-play {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #0f2336;
+  position: relative;
+}
+.footer__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 950px;
+  padding: 0 10px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
+.footer__img-oakLeaf-left {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+}
+.footer__img-oakLeaf-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer__menu {
+  margin-left: auto;
+}
+.footer__menu-list {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.footer__menu-link {
+  text-decoration: none;
+  color: #576d81;
+  font-size: 14px;
+  transition: 0.3s ease-in;
+}
+.footer__menu-link span {
+  color: #00cccc;
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer__menu-link:hover {
+  color: #00cccc;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+
+  .helpful-information__img-iphone {
+    margin-right: 30px;
+  }
+  .helpful-information__info {
+    margin-right: 30px;
+  }
+
+  .header__content-img {
+    height: 500px;
+    right: 320px;
+    margin-top: auto;
+  }
+  .header__content-title {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .advantages__card {
+    max-width: 30%;
+  }
+  .advantages__card-title {
+    font-size: 22px;
+  }
+
+  .additional-benefits__card {
+    max-width: 360px;
+    padding: 25px 15px 25px 85px;
+  }
+  .additional-benefits__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 580px;
+  }
+  .additional-benefits__card-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .additional-benefits__cards {
+    margin-top: -5px;
+  }
+  .additional-benefits__wrapper {
+    position: relative;
+    height: 100%;
+  }
+
+  .group-orders__info {
+    max-width: 380px;
+    margin: 0 30px 0 80px;
+  }
+
+  .footer__wrapper {
+    width: 700px;
+  }
+  .footer __img-oakLeaf-left {
+    height: 100%;
+    top: -60px;
+  }
+  .footer__img-oakLeaf-right {
+    height: 80%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+
+  .header__content-info {
+    margin-bottom: 80px;
+  }
+  .header__content {
+    padding-top: 60px;
+  }
+  .header__content-img {
+    height: 370px;
+    right: 360px;
+  }
+  .header__content-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 50px;
+  }
+
+  .advantages__card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .advantages__card-img {
+    margin-bottom: 15px;
+  }
+
+  .helpful-information__img-iphone {
+    height: 460px;
+    margin-left: 100px;
+    margin-top: -30px;
+  }
+  .helpful-information__img-cocktail {
+    height: 300px;
+    margin-left: -20px;
+  }
+  .helpful-information__img-crisps {
+    height: 80px;
+    left: 250px;
+    bottom: -30px;
+  }
+  .helpful-information__wrapper {
+    height: 400px;
+  }
+  .helpful-information__info-top-despription {
+    margin-bottom: 15px;
+  }
+  .helpful-information__info-title {
+    line-height: 45px;
+    margin-bottom: 15px;
+    font-size: 32px;
+  }
+
+  .additional-benefits__img {
+    height: 460px;
+  }
+  .additional-benefits__cards {
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+  .additional-benefits__card {
+    margin-bottom: 15px;
+    max-width: 280px;
+    padding: 10px 15px 15px 55px;
+  }
+  .additional-benefits__card:nth-child(2) {
+    margin-left: 20px;
+  }
+  .additional-benefits__img-icon {
+    height: 35px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .group-orders__wrapper {
+    height: 400px;
+  }
+  .group-orders__img-iphone {
+    height: 460px;
+    margin-right: 80px;
+  }
+  .group-orders__img-cocktail {
+    height: 300px;
+  }
+  .group-orders__img-blueberry {
+    height: 80px;
+    right: 250px;
+    bottom: -35px;
+  }
+  .group-orders__info-title {
+    line-height: 45px;
+    margin-bottom: 15px;
+    font-size: 32px;
+  }
+  .group-orders__info-top-despription {
+    margin-bottom: 15px;
+  }
+
+  .feedback__form {
+    text-align: center;
+  }
+  .feedback__img {
+    justify-content: flex-start;
+  }
+  .feedback__form-title {
+    font-size: 42px;
+  }
+
+  .footer__wrapper {
+    width: 500px;
+  }
+  .footer__img-oakLeaf-left {
+    height: 85%;
+    top: -50px;
+  }
+  .footer__img-oakLeaf-right {
+    height: 80%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+
+  .header__content-img {
+    height: 250px;
+  }
+  .header__content-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .header__content-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .header__content-button-img {
+    margin-left: 5px;
+    height: 15px;
+  }
+  .header__content {
+    padding-top: 40px;
+  }
+  .header__top-button {
+    min-width: 100px;
+    min-height: 37px;
+    padding: 5px 10px;
+  }
+
+  .menu__item {
+    margin-right: 20px;
+  }
+  .menu__link {
+    font-size: 12px;
+  }
+
+  .logo__img {
+    height: 35px;
+  }
+
+  .advantages__wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 40px 0 40px 0;
+  }
+  .advantages__card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .advantages__card-description {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  .advantages__card-img {
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  .advantages__card-title {
+    margin-bottom: 5px;
+  }
+
+  .helpful-information__wrapper {
+    height: 300px;
+  }
+  .helpful-information__img-iphone {
+    height: 320px;
+    margin-left: 60px;
+    margin-right: 15px;
+    margin-top: -5px;
+  }
+  .helpful-information__img-cocktail {
+    height: 180px;
+  }
+  .helpful-information__img-crisps {
+    height: 55px;
+    left: 160px;
+    bottom: -20px;
+  }
+  .helpful-information__info-title {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 5px;
+  }
+  .helpful-information__info-top-despription {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .helpful-information__info-bottom-despription {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .additional-benefits__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+    max-height: 100%;
+  }
+  .additional-benefits__img {
+    height: 320px;
+    z-index: 1;
+    position: static;
+    margin: 0;
+  }
+  .additional-benefits__card-title {
+    font-size: 18px;
+  }
+  .additional-benefits__cards {
+    margin-top: -20px;
+  }
+  .additional-benefits__card {
+    max-width: 100%;
+  }
+  .additional-benefits__card:nth-child(2) {
+    margin-left: 0;
+  }
+  .additional-benefits__card-description {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .group-orders__wrapper {
+    height: 300px;
+  }
+  .group-orders__info {
+    margin: 0 20px 0 60px;
+  }
+  .group-orders__img-iphone {
+    height: 320px;
+    margin-right: 45px;
+  }
+  .group-orders__img-cocktail {
+    height: 180px;
+  }
+  .group-orders__img-blueberry {
+    height: 55px;
+    right: 170px;
+    bottom: -10px;
+  }
+  .group-orders__info-title {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 5px;
+  }
+  .group-orders__info-top-despription {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .group-orders__info-buttom-despription {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .feedback__logo {
+    height: 60px;
+  }
+  .feedback__img {
+    justify-content: center;
+  }
+  .feedback__form-title {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .feedback__form-input {
+    margin-bottom: 10px;
+  }
+  .feedback__form-button {
+    margin: 0 0 10px 0;
+    width: 394px;
+  }
+
+  .footer__wrapper {
+    width: max-content;
+    padding: 35px 0;
+  }
+  .footer__menu {
+    padding-left: 20px;
+  }
+  .footer__img-oakLeaf-left {
+    left: 0;
+    bottom: 0;
+    height: 75%;
+  }
+  .footer__img-oakLeaf-right {
+    height: 60%;
+  }
+  .footer__logo {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .header {
+    min-width: 100%;
+  }
+  .header__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .header__content-button {
+    margin: 0 auto;
+  }
+  .header__top {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .header__content-title {
+    min-width: 100%;
+  }
+  .header__content-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .header__content-img {
+    height: 225px;
+    position: static;
+    margin: 0 5px 0 5px;
+  }
+
+  .menu {
+    margin: 0;
+  }
+  .menu__list {
+    padding: 0;
+  }
+  .menu__item:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .helpful-information__wrapper {
+    flex-wrap: wrap;
+    height: min-content;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .helpful-information__img-iphone {
+    height: 200px;
+    margin: -15px 0 0 0;
+  }
+  .helpful-information__img-cocktail {
+    position: relative;
+    height: 120px;
+    top: -20px;
+    left: 30px;
+  }
+  .helpful-information__img {
+    position: relative;
+    left: -20px;
+  }
+  .helpful-information__img-crisps {
+    height: 35px;
+    left: 110px;
+    top: 165px;
+  }
+  .helpful-information__info {
+    text-align: center;
+    padding: 30px 15px 20px 15px;
+  }
+
+  .feedback__form-input {
+    padding: 17px 50px 16px 50px;
+  }
+  .feedback__form {
+    max-width: 100%;
+  }
+  .feedback__form-input {
+    width: 394px;
+    max-width: 80%;
+  }
+  .feedback ::placeholder {
+    text-align: center;
+  }
+  .feedback__form-button {
+    max-width: 80%;
+  }
+  .feedback__img-app-store {
+    max-width: 37%;
+  }
+  .feedback__img-google-play {
+    max-width: 37%;
+  }
+
+  .group-orders__wrapper {
+    height: min-content;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin-bottom: 70px;
+    margin-top: -20px;
+  }
+  .group-orders__img {
+    position: relative;
+    left: 55px;
+  }
+  .group-orders__img-iphone {
+    height: 200px;
+    margin: -15px 0 0 0;
+  }
+  .group-orders__info {
+    text-align: center;
+    margin: 20px 15px 20px 15px;
+  }
+  .group-orders__img-cocktail {
+    position: relative;
+    height: 130px;
+    top: -15px;
+    left: -20px;
+  }
+  .group-orders__img-blueberry {
+    position: relative;
+    height: 30px;
+    left: -190px;
+    top: 0;
+  }
+
+  .footer__wrapper {
+    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 25px 0;
+  }
+  .footer__menu {
+    margin: 0 10px;
+    padding: 0;
+  }
+  .footer__img-oakLeaf-left {
+    height: 40%;
+  }
+  .footer__img-oakLeaf-right {
+    height: 35%;
+  }
+  .footer__logo {
+    margin-bottom: 25px;
+  }
+}
