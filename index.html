@@ -23,10 +23,10 @@
             <nav class="menu">
                <ul class="menu__list">
                   <li class="menu__item">
-                     <a class="menu__link" href="#">Stores</a>
+                     <a class="menu__link" href="#stores">Stores</a>
                   </li>
                   <li class="menu__item">
-                     <a class="menu__link" href="#">Help & Support</a>
+                     <a class="menu__link" href="#help">Help & Support</a>
                   </li>
                </ul>
             </nav>
@@ -112,7 +112,7 @@
                         them over to the next month.</p>
                   </div>
                </div>
-               <img class="additional-benefits__img" src="images/man-block-advantages.png" alt="advantages"
+               <img class="additional-benefits__img" id="stores" src="images/man-block-advantages.png" alt="advantages"
                   height="627">
             </div>
          </div>
@@ -137,13 +137,13 @@
             </div>
          </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="help">
          <div class="container">
             <div class="feedback__wrapper">
                <form class="feedback__form" action="#">
                   <img class="feedback__logo" src="images/logo-form-score.svg" alt="score">
                   <h3 class="feedback__form-title">Enjoy your afternoon<br> tea with a snack</h3>
-                  <input class="feedback__form-input" type="text" placeholder="Enter mobile number" required>
+                  <input class="feedback__form-input" id="phone" type="tel" placeholder="Enter mobile number" required>
                   <button class="feedback__form-button">Send Link</button>
                   <div class="feedback__img">
                      <img class="feedback__img-app-store" src="images/AppStore.svg" alt="App Store">
@@ -197,6 +197,8 @@
          </ul>
       </div>
    </footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 
 </html>
